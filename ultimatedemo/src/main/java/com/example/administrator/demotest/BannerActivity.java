@@ -46,7 +46,8 @@ public class BannerActivity extends AppCompatActivity {
         GlideImageLoader  imgLoader=new GlideImageLoader();
         banner.setImageLoader(imgLoader);
 //        banner.setImageLoader
-
+        //0-7:center,center_crop,center_inside,fit_center,fit_end,fit_start,fit_xy,martrix
+        banner.addScaleType(3);
         banner.setBannerAnimation(Transformer.Stack);
         banner.setImages(Arrays.asList(images));
         banner.start();
